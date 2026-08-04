@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+  <title id="title">Governance after the Representation Gap</title>
+  <desc id="desc">A diagram showing device, space, session, and record-level policy surrounding a measured person who is absent from the protocol namespace.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#08111f"/><stop offset="1" stop-color="#1c1028"/></linearGradient>
+    <radialGradient id="centre" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#7c3aed" stop-opacity="0.62"/><stop offset="1" stop-color="#111827" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#a78bfa"/></marker>
+  </defs>
+  <rect width="1280" height="560" rx="28" fill="url(#bg)"/>
+  <ellipse cx="640" cy="294" rx="310" ry="230" fill="url(#centre)" opacity="0.45"/>
+  <text x="640" y="50" text-anchor="middle" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="28" font-weight="800">GOVERNANCE AFTER THE REPRESENTATION GAP</text>
+  <text x="640" y="80" text-anchor="middle" fill="#94a3b8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" letter-spacing="1.1">MOVE POLICY FROM THE UNREPRESENTED PERSON TO OBJECTS THE SYSTEM CAN ACTUALLY GOVERN</text>
+
+  <g stroke="#a78bfa" stroke-width="2.5" fill="none" marker-end="url(#arrow)" opacity="0.82">
+    <path d="M360 196 C445 214 484 245 520 271"/>
+    <path d="M920 196 C835 214 796 245 760 271"/>
+    <path d="M360 414 C445 392 484 354 520 326"/>
+    <path d="M920 414 C835 392 796 354 760 326"/>
+  </g>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, sans-serif" filter="url(#shadow)">
+    <g transform="translate(78 125)">
+      <rect width="300" height="142" rx="22" fill="#0f2438" stroke="#22d3ee" stroke-opacity="0.65"/>
+      <text x="26" y="36" fill="#67e8f9" font-size="14" font-weight="800" letter-spacing="1.8">DEVICE</text>
+      <text x="26" y="71" fill="#fff" font-size="22" font-weight="800">Capability disclosure</text>
+      <text x="26" y="99" fill="#cbd5e1" font-size="14">Active sensing indication</text>
+      <text x="26" y="122" fill="#94a3b8" font-size="13">Fail closed when indication fails</text>
+    </g>
+    <g transform="translate(902 125)">
+      <rect width="300" height="142" rx="22" fill="#17203f" stroke="#818cf8" stroke-opacity="0.68"/>
+      <text x="26" y="36" fill="#a5b4fc" font-size="14" font-weight="800" letter-spacing="1.8">SPACE</text>
+      <text x="26" y="71" fill="#fff" font-size="22" font-weight="800">Place-scoped policy</text>
+      <text x="26" y="99" fill="#cbd5e1" font-size="14">Protection by presence</text>
+      <text x="26" y="122" fill="#94a3b8" font-size="13">No occupant enrolment required</text>
+    </g>
+    <g transform="translate(78 346)">
+      <rect width="300" height="142" rx="22" fill="#24183b" stroke="#c084fc" stroke-opacity="0.68"/>
+      <text x="26" y="36" fill="#d8b4fe" font-size="14" font-weight="800" letter-spacing="1.8">SESSION</text>
+      <text x="26" y="71" fill="#fff" font-size="22" font-weight="800">Signed attestation</text>
+      <text x="26" y="99" fill="#cbd5e1" font-size="14">Purpose · configuration · proxy</text>
+      <text x="26" y="122" fill="#94a3b8" font-size="13">Auditable by an outside reviewer</text>
+    </g>
+    <g transform="translate(902 346)">
+      <rect width="300" height="142" rx="22" fill="#32172c" stroke="#fb7185" stroke-opacity="0.7"/>
+      <text x="26" y="36" fill="#fda4af" font-size="14" font-weight="800" letter-spacing="1.8">RECORD</text>
+      <text x="26" y="71" fill="#fff" font-size="22" font-weight="800">Retention constraint</text>
+      <text x="26" y="99" fill="#cbd5e1" font-size="14">Expiry · provenance · reassessment</text>
+      <text x="26" y="122" fill="#94a3b8" font-size="13">Govern the data without naming its subject</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, sans-serif" filter="url(#shadow)">
+    <circle cx="640" cy="295" r="128" fill="#121626" stroke="#a78bfa" stroke-width="3"/>
+    <circle cx="640" cy="295" r="105" fill="#1d1530" stroke="#7c3aed" stroke-dasharray="7 7"/>
+    <text x="640" y="258" text-anchor="middle" fill="#ddd6fe" font-size="14" font-weight="800" letter-spacing="2">MEASURED PERSON</text>
+    <text x="640" y="294" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">physically present</text>
+    <text x="640" y="324" text-anchor="middle" fill="#fda4af" font-size="19" font-weight="700">protocol absent</text>
+    <text x="640" y="352" text-anchor="middle" fill="#94a3b8" font-size="13">no address · credential · session role</text>
+  </g>
+
+  <rect x="423" y="500" width="434" height="38" rx="19" fill="#052e2b" stroke="#34d399" stroke-opacity="0.65"/>
+  <text x="640" y="525" text-anchor="middle" fill="#6ee7b7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="1.1">PROTECTION WITHOUT BUILDING AN IDENTITY REGISTRY</text>
+</svg>
