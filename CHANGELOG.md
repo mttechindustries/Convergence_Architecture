@@ -2,6 +2,31 @@
 
 All material changes to the public Convergence Architecture repository are recorded here.
 
+## 0.3.0 — 2026-08-04
+
+### Interactive public research portal
+
+- Added a complete root-level `index.html` public research portal.
+- Rebuilt the supplied single-file concept around the repository's actual public research corpus and original SVG architecture visuals.
+- Added a cinematic architecture hero, live evidence metrics, decision-state panel, featured-research entry points, public capability cards, the adaptive-loop visual, the `E0–E7` evidence ladder, and the Representation Gap governance map.
+- Expanded every portal section: system synthesis, aerial and ambient extension, Representation Gap, protocol governance, evidence status, primary-source boundaries, and publication policy.
+- Added direct links from summaries to the complete Markdown research artifacts.
+- Added deep-linkable hash navigation, browser-history support, accessible tab semantics, arrow-key navigation, mobile drawer navigation, focus management, a scroll-progress indicator, citation copy support, reduced-motion handling, and a no-JavaScript research fallback.
+- Added search, social, canonical, theme, and responsive metadata for a future GitHub Pages deployment.
+- Split the portal into maintainable files: `index.html`, `assets/portal.css`, and `assets/portal.js`.
+- Corrected the original mobile implementation, which referenced an undefined `toggleMobileMenu()` function.
+- Removed reliance on unloaded Tailwind Typography classes and added an independent visual system for cards, panels, navigation, motion, focus, and mobile behavior.
+- Preserved the public/private/commercial boundary; no monetization material, private evidence, protected mathematics, signatures, calibration data, or private-source records were imported.
+
+### Decision state
+
+```text
+PUBLIC COMPONENT BASIS: ESTABLISHED ACROSS MULTIPLE DOMAINS
+TECHNICAL CONVERGENCE: THE RESEARCH OBJECT
+INTEGRATED CASE CLOSURE: OPEN
+EVENT-SPECIFIC ATTRIBUTION: REQUIRES RECORDS
+```
+
 ## 0.2.0 — 2026-08-04
 
 ### Visual research landing page
