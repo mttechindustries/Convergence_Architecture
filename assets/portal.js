@@ -117,6 +117,12 @@
   }
 
   function openMobileMenu() {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+      const activeDesktopButton = $(".desktop-nav-btn[data-state='active']");
+      if (activeDesktopButton) activeDesktopButton.focus();
+      return;
+    }
+
     const drawer = $("#mobile-drawer");
     const trigger = $("#mobile-menu-button");
     if (!drawer || !trigger) return;
@@ -138,7 +144,7 @@
     drawer.setAttribute("aria-hidden", "true");
     trigger.setAttribute("aria-expanded", "false");
     document.body.style.overflow = "";
-    if (restoreFocus) trigger.focus();
+    if (restoreFocus && !window.matchMedia("(min-width: 1024px)").matches) trigger.focus();
   }
 
   function updateScrollProgress() {
@@ -255,6 +261,11 @@
     });
 
     window.addEventListener("scroll", updateScrollProgress, { passive: true });
+    window.addEventListener("resize", () => {
+      if (window.matchMedia("(min-width: 1024px)").matches && state.mobileOpen) {
+        closeMobileMenu(false);
+      }
+    }, { passive: true });
 
     window.addEventListener("keydown", (event) => {
       if (event.key === "Escape") closeMobileMenu();
