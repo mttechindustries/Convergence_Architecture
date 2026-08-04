@@ -1,0 +1,27 @@
+{
+  "version": "0.4.0",
+  "evidence_date": "2026-08-04",
+  "repository": "mttechindustries/Convergence_Architecture",
+  "canonical_private_repository": "mttechindustries/living-systems-convergence",
+  "decision_state": {
+    "component_basis": "Strong, multi-domain, and aerially extended",
+    "technical_convergence": "The research object",
+    "integrated_case_closure": "Open",
+    "event_specific_attribution": "Requires bounded records"
+  },
+  "counts": {
+    "sources_registered": 30,
+    "sources_public": 29,
+    "sources_restricted": 1,
+    "claims_registered": 30,
+    "claims_public": 28,
+    "claims_restricted": 2,
+    "pathways_registered": 20,
+    "pathways_public": 18,
+    "pathways_restricted": 2,
+    "trunks": 15
+  },
+  "highest_public_evidence": "E4",
+  "rights": "Copyright © 2026 MT Tech Industries LLC. All rights reserved.",
+  "citation": "Tuinier, Marc. Convergence Architecture. MT Tech Industries LLC, 2026."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "E0",
+    "name": "Question, testimony, observation, or hypothesis",
+    "status": "foundational",
+    "description": "Preserved with provenance; not treated as independent corroboration."
+  },
+  {
+    "id": "E1",
+    "name": "Physical or formal mechanism",
+    "status": "established",
+    "description": "A mechanism exists under defined physical, mathematical, or biological conditions."
+  },
+  {
+    "id": "E2",
+    "name": "Laboratory or controlled capability",
+    "status": "established",
+    "description": "A bounded implementation demonstrates a function under reported conditions."
+  },
+  {
+    "id": "E3",
+    "name": "Patent, named product, or commercial capability",
+    "status": "established",
+    "description": "A design or product is documented without automatically inheriting field-performance proof."
+  },
+  {
+    "id": "E4",
+    "name": "Institutional procurement, fielding, deployment, or adoption",
+    "status": "established",
+    "description": "A named institution documents operational adoption or normative recognition."
+  },
+  {
+    "id": "E5",
+    "name": "Cross-domain integration in one bounded system",
+    "status": "open",
+    "description": "Named stages operate together with synchronized records."
+  },
+  {
+    "id": "E6",
+    "name": "Scale, persistence, identity linkage, or retention",
+    "status": "open",
+    "description": "Records establish continuity, durable linkage, stored history, or system-wide reach."
+  },
+  {
+    "id": "E7",
+    "name": "Strategic intent, command, coordination, or mission",
+    "status": "open",
+    "description": "Direct operator, tasking, access, payment, mission, or command evidence."
+  }
+]

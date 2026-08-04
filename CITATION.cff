@@ -1,19 +1,22 @@
 cff-version: 1.2.0
-message: "Cite this repository when using the Convergence Architecture, Representation Gap, or ambient-sensing governance framework."
+message: "Cite this repository when using the Convergence Architecture, Representation Gap, evidence registry, or ambient-sensing governance framework."
 title: "Convergence Architecture"
 type: dataset
 authors:
   - family-names: "Tuinier"
     given-names: "Marc"
     affiliation: "MT Tech Industries LLC"
-version: 0.1.0
+version: 0.4.0
 date-released: 2026-08-04
 repository-code: "https://github.com/mttechindustries/Convergence_Architecture"
+url: "https://mttechindustries.github.io/Convergence_Architecture/"
 abstract: >-
-  Public research repository mapping the convergence of contactless sensing,
-  physiological and behavioral inference, silent-speech interfaces, mobile and
-  aerial systems, directed actuation, adaptive artificial intelligence, evidence
-  architecture, and ambient-sensing governance.
+  Evidence-controlled public research repository and data-driven portal mapping
+  contactless sensing, physiological and behavioral inference, silent-speech
+  interfaces, mobile and aerial systems, directed actuation, adaptive artificial
+  intelligence, evidence architecture, and ambient-sensing governance. Release
+  0.4.0 includes public-safe source, claim, pathway, trunk, and correction
+  registries with linked navigation and explicit public/private boundaries.
 keywords:
   - ambient sensing
   - contactless physiology
@@ -24,3 +27,4 @@ keywords:
   - evidence architecture
   - cognitive sovereignty
   - privacy engineering
+  - public evidence registry

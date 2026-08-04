@@ -1,0 +1,39 @@
+name: Validate public portal
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate public evidence registry
+        run: python3 scripts/validate_public_data.py
+
+      - name: Check portal JavaScript syntax
+        run: |
+          for file in assets/js/portal-*.js; do node --check "$file"; done
+
+      - name: Confirm required static files
+        run: |
+          test -f index.html
+          test -f assets/css/portal-1.css
+          test -f assets/css/portal-2.css
+          test -f assets/css/portal-3.css
+          test -f assets/js/portal-1.js
+          test -f assets/js/portal-10.js
+          test -f data/metadata.json
+          test -f .nojekyll

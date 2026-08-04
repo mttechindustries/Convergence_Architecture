@@ -1,0 +1,17 @@
+{
+  "name": "Convergence Architecture",
+  "short_name": "Convergence",
+  "description": "Evidence-controlled public research portal for the Convergence Architecture program.",
+  "start_url": "./#overview",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

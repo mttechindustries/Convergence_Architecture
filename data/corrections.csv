@@ -1,0 +1,2 @@
+correction_id,date,record_type,record_id,summary,original_statement,corrected_statement,evidence_sources,status
+COR-0001,2026-08-04,claim,SOV-CLM-0029,"SIM7600E-H hardware classification corrected","The cited UAV smart-metering study labels a SIM7600E HAT as a WiMAX adapter.","Vendor documentation identifies the SIM7600E-H HAT as LTE Cat-4 with GNSS, not IEEE 802.16 WiMAX.","SOV-SRC-0029,SOV-SRC-0030",ACTIVE
