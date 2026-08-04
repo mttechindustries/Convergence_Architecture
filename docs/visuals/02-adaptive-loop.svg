@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">Adaptive convergence loop</title>
+  <desc id="desc">Seven stages showing sensing, identity linkage, inference, positioning, actuation, response measurement, and model updating.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="1" stop-color="#151026"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.48" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="420" rx="28" fill="url(#bg)"/>
+  <text x="700" y="54" text-anchor="middle" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="27" font-weight="800">THE ADAPTIVE CONVERGENCE LOOP</text>
+  <text x="700" y="84" text-anchor="middle" fill="#94a3b8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" letter-spacing="1.2">THE RESEARCH OBJECT IS THE QUALIFIED EDGE BETWEEN STAGES</text>
+
+  <path d="M177 201H1220" stroke="#312e81" stroke-width="4" stroke-linecap="round"/>
+  <path d="M177 201H1220" stroke="url(#flow)" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, sans-serif" filter="url(#shadow)">
+    <g transform="translate(55 132)">
+      <rect width="160" height="138" rx="22" fill="#0f2438" stroke="#22d3ee" stroke-opacity="0.65"/>
+      <circle cx="80" cy="42" r="23" fill="#083344" stroke="#67e8f9"/><text x="80" y="49" text-anchor="middle" fill="#67e8f9" font-size="19" font-weight="800">01</text>
+      <text x="80" y="91" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">SENSE</text>
+      <text x="80" y="116" text-anchor="middle" fill="#94a3b8" font-size="12">physical observables</text>
+    </g>
+    <g transform="translate(245 132)">
+      <rect width="160" height="138" rx="22" fill="#10203b" stroke="#38bdf8" stroke-opacity="0.6"/>
+      <circle cx="80" cy="42" r="23" fill="#0c4a6e" stroke="#7dd3fc"/><text x="80" y="49" text-anchor="middle" fill="#bae6fd" font-size="19" font-weight="800">02</text>
+      <text x="80" y="91" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">LINK</text>
+      <text x="80" y="116" text-anchor="middle" fill="#94a3b8" font-size="12">device · place · identity</text>
+    </g>
+    <g transform="translate(435 132)">
+      <rect width="160" height="138" rx="22" fill="#171b42" stroke="#818cf8" stroke-opacity="0.65"/>
+      <circle cx="80" cy="42" r="23" fill="#312e81" stroke="#a5b4fc"/><text x="80" y="49" text-anchor="middle" fill="#c7d2fe" font-size="19" font-weight="800">03</text>
+      <text x="80" y="91" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">INFER</text>
+      <text x="80" y="116" text-anchor="middle" fill="#94a3b8" font-size="12">state · intent · pattern</text>
+    </g>
+    <g transform="translate(625 132)">
+      <rect width="160" height="138" rx="22" fill="#20163f" stroke="#a78bfa" stroke-opacity="0.7"/>
+      <circle cx="80" cy="42" r="23" fill="#4c1d95" stroke="#c4b5fd"/><text x="80" y="49" text-anchor="middle" fill="#ddd6fe" font-size="19" font-weight="800">04</text>
+      <text x="80" y="91" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">POSITION</text>
+      <text x="80" y="116" text-anchor="middle" fill="#94a3b8" font-size="12">geometry · access · relay</text>
+    </g>
+    <g transform="translate(815 132)">
+      <rect width="160" height="138" rx="22" fill="#2b1538" stroke="#e879f9" stroke-opacity="0.66"/>
+      <circle cx="80" cy="42" r="23" fill="#701a75" stroke="#f0abfc"/><text x="80" y="49" text-anchor="middle" fill="#f5d0fe" font-size="19" font-weight="800">05</text>
+      <text x="80" y="91" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">ACT</text>
+      <text x="80" y="116" text-anchor="middle" fill="#94a3b8" font-size="12">stimulus · control · effect</text>
+    </g>
+    <g transform="translate(1005 132)">
+      <rect width="160" height="138" rx="22" fill="#32162d" stroke="#fb7185" stroke-opacity="0.68"/>
+      <circle cx="80" cy="42" r="23" fill="#881337" stroke="#fda4af"/><text x="80" y="49" text-anchor="middle" fill="#fecdd3" font-size="19" font-weight="800">06</text>
+      <text x="80" y="91" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">MEASURE</text>
+      <text x="80" y="116" text-anchor="middle" fill="#94a3b8" font-size="12">response · change · effect</text>
+    </g>
+    <g transform="translate(1195 132)">
+      <rect width="150" height="138" rx="22" fill="#321c2a" stroke="#f59e0b" stroke-opacity="0.72"/>
+      <circle cx="75" cy="42" r="23" fill="#78350f" stroke="#fcd34d"/><text x="75" y="49" text-anchor="middle" fill="#fde68a" font-size="19" font-weight="800">07</text>
+      <text x="75" y="91" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">UPDATE</text>
+      <text x="75" y="116" text-anchor="middle" fill="#94a3b8" font-size="12">model · policy · next action</text>
+    </g>
+  </g>
+
+  <path d="M1270 288 C1270 360 130 360 130 288" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="8 7" marker-end="url(#arrow)" opacity="0.82"/>
+  <text x="700" y="353" text-anchor="middle" fill="#c4b5fd" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" letter-spacing="1.4">FEEDBACK CLOSES THE LOOP</text>
+  <text x="700" y="391" text-anchor="middle" fill="#64748b" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13">fixed infrastructure · wearables · vehicles · unmanned systems · edge processing · remote services</text>
+</svg>
