@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">Convergence Architecture</title>
+  <desc id="desc">A network diagram showing sensing, inference, identity, mobility, actuation, response measurement, and governance converging around a human-facing adaptive system.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b18"/>
+      <stop offset="0.48" stop-color="#111731"/>
+      <stop offset="1" stop-color="#230d31"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.95"/>
+      <stop offset="0.38" stop-color="#6d28d9" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#111827" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="0.5" stop-color="#a78bfa" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172554"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#8b5cf6" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="720" rx="32" fill="url(#bg)"/>
+  <rect width="1400" height="720" rx="32" fill="url(#grid)"/>
+  <ellipse cx="700" cy="354" rx="350" ry="260" fill="url(#core)" opacity="0.42"/>
+
+  <g stroke="url(#line)" stroke-width="3" fill="none">
+    <path d="M294 160 C470 190 515 255 610 315"/>
+    <path d="M281 323 C445 320 510 330 598 346"/>
+    <path d="M310 526 C460 475 530 420 612 383"/>
+    <path d="M1106 160 C934 193 874 253 790 315"/>
+    <path d="M1120 323 C960 320 890 332 802 348"/>
+    <path d="M1090 526 C948 473 865 421 790 383"/>
+    <path d="M700 576 C700 500 700 455 700 424"/>
+    <path d="M700 126 C700 192 700 245 700 286"/>
+  </g>
+
+  <g fill="#c4b5fd" opacity="0.68">
+    <circle cx="446" cy="229" r="4"/><circle cx="497" cy="263" r="3"/><circle cx="934" cy="226" r="4"/><circle cx="886" cy="262" r="3"/>
+    <circle cx="453" cy="454" r="4"/><circle cx="932" cy="455" r="4"/><circle cx="700" cy="506" r="4"/><circle cx="700" cy="208" r="4"/>
+  </g>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" filter="url(#soft)">
+    <g>
+      <rect x="92" y="105" width="290" height="104" rx="22" fill="url(#node)" stroke="#22d3ee" stroke-opacity="0.42"/>
+      <text x="237" y="146" text-anchor="middle" fill="#67e8f9" font-size="15" font-weight="700" letter-spacing="2">MEASURE</text>
+      <text x="237" y="178" text-anchor="middle" fill="#f8fafc" font-size="23" font-weight="700">Ambient Sensing</text>
+    </g>
+    <g>
+      <rect x="72" y="270" width="310" height="104" rx="22" fill="url(#node)" stroke="#60a5fa" stroke-opacity="0.42"/>
+      <text x="227" y="311" text-anchor="middle" fill="#93c5fd" font-size="15" font-weight="700" letter-spacing="2">INTERPRET</text>
+      <text x="227" y="343" text-anchor="middle" fill="#f8fafc" font-size="23" font-weight="700">Physiological Inference</text>
+    </g>
+    <g>
+      <rect x="112" y="478" width="290" height="104" rx="22" fill="url(#node)" stroke="#a78bfa" stroke-opacity="0.48"/>
+      <text x="257" y="519" text-anchor="middle" fill="#c4b5fd" font-size="15" font-weight="700" letter-spacing="2">CONNECT</text>
+      <text x="257" y="551" text-anchor="middle" fill="#f8fafc" font-size="23" font-weight="700">Identity Linkage</text>
+    </g>
+
+    <g>
+      <rect x="1018" y="105" width="290" height="104" rx="22" fill="url(#node)" stroke="#f472b6" stroke-opacity="0.48"/>
+      <text x="1163" y="146" text-anchor="middle" fill="#f9a8d4" font-size="15" font-weight="700" letter-spacing="2">POSITION</text>
+      <text x="1163" y="178" text-anchor="middle" fill="#f8fafc" font-size="23" font-weight="700">Mobile Geometry</text>
+    </g>
+    <g>
+      <rect x="1018" y="270" width="310" height="104" rx="22" fill="url(#node)" stroke="#fb7185" stroke-opacity="0.48"/>
+      <text x="1173" y="311" text-anchor="middle" fill="#fda4af" font-size="15" font-weight="700" letter-spacing="2">ACT</text>
+      <text x="1173" y="343" text-anchor="middle" fill="#f8fafc" font-size="23" font-weight="700">Directed Actuation</text>
+    </g>
+    <g>
+      <rect x="998" y="478" width="300" height="104" rx="22" fill="url(#node)" stroke="#f59e0b" stroke-opacity="0.52"/>
+      <text x="1148" y="519" text-anchor="middle" fill="#fcd34d" font-size="15" font-weight="700" letter-spacing="2">LEARN</text>
+      <text x="1148" y="551" text-anchor="middle" fill="#f8fafc" font-size="23" font-weight="700">Response Measurement</text>
+    </g>
+
+    <g>
+      <rect x="548" y="50" width="304" height="82" rx="22" fill="#111827" stroke="#34d399" stroke-opacity="0.55"/>
+      <text x="700" y="84" text-anchor="middle" fill="#6ee7b7" font-size="14" font-weight="700" letter-spacing="2">CONSTRAINT</text>
+      <text x="700" y="111" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700">Governance + Evidence</text>
+    </g>
+    <g>
+      <rect x="548" y="574" width="304" height="82" rx="22" fill="#111827" stroke="#a78bfa" stroke-opacity="0.55"/>
+      <text x="700" y="608" text-anchor="middle" fill="#c4b5fd" font-size="14" font-weight="700" letter-spacing="2">ADAPT</text>
+      <text x="700" y="635" text-anchor="middle" fill="#f8fafc" font-size="21" font-weight="700">AI + Model Updating</text>
+    </g>
+  </g>
+
+  <g filter="url(#glow)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+    <circle cx="700" cy="354" r="132" fill="#111827" stroke="#c4b5fd" stroke-width="3"/>
+    <circle cx="700" cy="354" r="112" fill="#17112b" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="5 8"/>
+    <text x="700" y="329" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="700" letter-spacing="4">THE SYSTEM IS</text>
+    <text x="700" y="370" text-anchor="middle" fill="#ffffff" font-size="31" font-weight="800">THE GRAPH</text>
+    <text x="700" y="400" text-anchor="middle" fill="#a5b4fc" font-size="18" font-weight="600">between capabilities</text>
+  </g>
+
+  <text x="700" y="692" text-anchor="middle" fill="#94a3b8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" letter-spacing="1.4">PUBLIC RESEARCH · EVIDENCE DISCIPLINE · HUMAN-ALGORITHM GOVERNANCE</text>
+</svg>
