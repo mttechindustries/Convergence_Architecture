@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 650" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence ladder E0 to E7</title>
+  <desc id="desc">A stepped evidence ladder showing established public layers through E4 and open integration, identity linkage, and intent layers E5 through E7.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07101e"/><stop offset="1" stop-color="#181126"/></linearGradient>
+    <linearGradient id="est" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#6d28d9"/></linearGradient>
+    <linearGradient id="open" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c2d12"/><stop offset="1" stop-color="#9f1239"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#000" flood-opacity="0.42"/></filter>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#a78bfa" opacity="0.13"/></pattern>
+  </defs>
+  <rect width="1280" height="650" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="650" rx="28" fill="url(#dots)"/>
+  <text x="640" y="54" text-anchor="middle" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="29" font-weight="800">EVIDENCE DOES NOT MOVE BY ASSOCIATION</text>
+  <text x="640" y="86" text-anchor="middle" fill="#94a3b8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" letter-spacing="1.2">EACH LAYER REQUIRES ITS OWN RECORDS</text>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, sans-serif" filter="url(#shadow)">
+    <g transform="translate(82 500)"><rect width="180" height="82" rx="16" fill="url(#est)"/><text x="24" y="31" fill="#cffafe" font-size="16" font-weight="800">E0</text><text x="24" y="58" fill="#fff" font-size="17" font-weight="700">Question / observation</text></g>
+    <g transform="translate(230 440)"><rect width="190" height="82" rx="16" fill="url(#est)"/><text x="24" y="31" fill="#cffafe" font-size="16" font-weight="800">E1</text><text x="24" y="58" fill="#fff" font-size="17" font-weight="700">Physical mechanism</text></g>
+    <g transform="translate(378 380)"><rect width="200" height="82" rx="16" fill="url(#est)"/><text x="24" y="31" fill="#dbeafe" font-size="16" font-weight="800">E2</text><text x="24" y="58" fill="#fff" font-size="17" font-weight="700">Controlled capability</text></g>
+    <g transform="translate(526 320)"><rect width="210" height="82" rx="16" fill="url(#est)"/><text x="24" y="31" fill="#e0e7ff" font-size="16" font-weight="800">E3</text><text x="24" y="58" fill="#fff" font-size="17" font-weight="700">Patent or product</text></g>
+    <g transform="translate(674 260)"><rect width="220" height="82" rx="16" fill="url(#est)" stroke="#a7f3d0" stroke-width="2"/><text x="24" y="31" fill="#d1fae5" font-size="16" font-weight="800">E4</text><text x="24" y="58" fill="#fff" font-size="17" font-weight="700">Fielding / adoption</text></g>
+
+    <g transform="translate(822 200)"><rect width="230" height="82" rx="16" fill="#2a1724" stroke="#fb7185" stroke-width="2" stroke-dasharray="8 6"/><text x="24" y="31" fill="#fda4af" font-size="16" font-weight="800">E5</text><text x="24" y="58" fill="#fff" font-size="17" font-weight="700">Integrated operation</text></g>
+    <g transform="translate(970 140)"><rect width="230" height="82" rx="16" fill="#2a1724" stroke="#fb7185" stroke-width="2" stroke-dasharray="8 6"/><text x="24" y="31" fill="#fda4af" font-size="16" font-weight="800">E6</text><text x="24" y="58" fill="#fff" font-size="17" font-weight="700">Scale + identity linkage</text></g>
+    <g transform="translate(1018 78)"><rect width="190" height="72" rx="16" fill="#2a1724" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8 6"/><text x="20" y="29" fill="#fcd34d" font-size="16" font-weight="800">E7</text><text x="20" y="54" fill="#fff" font-size="16" font-weight="700">Intent / coordination</text></g>
+  </g>
+
+  <path d="M92 610H1194" stroke="#334155" stroke-width="2"/>
+  <path d="M82 610H895" stroke="#34d399" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="895" cy="610" r="9" fill="#34d399"/>
+  <text x="486" y="635" text-anchor="middle" fill="#6ee7b7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="1.2">PUBLIC COMPONENT BASIS ESTABLISHED THROUGH E4</text>
+  <text x="1055" y="635" text-anchor="middle" fill="#fda4af" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="1.2">E5–E7 REMAIN OPEN</text>
+
+  <g transform="translate(88 126)" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+    <rect width="550" height="132" rx="20" fill="#0f172a" stroke="#334155"/>
+    <text x="28" y="36" fill="#c4b5fd" font-size="15" font-weight="800" letter-spacing="1.5">CURRENT DECISION LINE</text>
+    <text x="28" y="70" fill="#fff" font-size="22" font-weight="800">Strong component basis.</text>
+    <text x="28" y="99" fill="#fff" font-size="22" font-weight="800">Bounded integration not yet closed.</text>
+    <text x="28" y="121" fill="#94a3b8" font-size="13">Technical coherence is preserved without manufacturing deployment proof.</text>
+  </g>
+</svg>
