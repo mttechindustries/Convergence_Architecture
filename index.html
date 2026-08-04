@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050816">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Convergence Architecture maps the public technical record across contactless sensing, physiological inference, mobile geometry, artificial intelligence, directed actuation, and human-algorithm governance.">
+  <meta name="author" content="Marc Tuinier, MT Tech Industries LLC">
+  <meta name="robots" content="index,follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Convergence Architecture — Public Research Portal">
+  <meta property="og:description" content="The system is not one machine. It is the graph between machines.">
+  <meta property="og:image" content="https://mttechindustries.github.io/Convergence_Architecture/docs/visuals/01-convergence-hero.svg">
+  <meta property="og:url" content="https://mttechindustries.github.io/Convergence_Architecture/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://mttechindustries.github.io/Convergence_Architecture/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Program Overview — Convergence Architecture</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#f5f3ff",
+              100: "#ede9fe",
+              300: "#c4b5fd",
+              400: "#a78bfa",
+              500: "#8b5cf6",
+              600: "#7c3aed",
+              700: "#6d28d9",
+              900: "#4c1d95"
+            }
+          },
+          boxShadow: {
+            glow: "0 0 40px rgba(139, 92, 246, 0.20)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/portal.css">
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="assets/portal.js"></script>
+</head>
+<body class="min-h-screen text-slate-100 antialiased">
+  <a class="skip-link" href="#main-content">Skip to research content</a>
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <div id="section-announcer" class="sr-only" aria-live="polite"></div>
+
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/78 backdrop-blur-xl">
+    <div class="mx-auto flex h-16 max-w-[92rem] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="#overview" data-tab-link="overview" class="group flex min-w-0 items-center gap-3" aria-label="Convergence Architecture overview">
+        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 via-purple-600 to-cyan-600 shadow-lg shadow-purple-950/50 transition-transform group-hover:scale-[1.04]">
+          <i data-lucide="network" class="h-5 w-5 text-white" aria-hidden="true"></i>
+        </span>
+        <span class="min-w-0">
+          <span class="block truncate text-sm font-extrabold tracking-[0.13em] text-white sm:text-base">CONVERGENCE ARCHITECTURE</span>
+          <span class="block truncate text-[10px] font-medium tracking-[0.15em] text-slate-500">MARC TUINIER · MT TECH INDUSTRIES LLC</span>
+        </span>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <span class="hidden items-center gap-2 rounded-full border border-emerald-900/80 bg-emerald-950/45 px-3 py-1 text-[11px] font-semibold text-emerald-300 md:inline-flex">
+          <span class="status-dot text-emerald-400"></span>
+          PUBLIC RESEARCH · v0.3.0
+        </span>
+        <a href="https://github.com/mttechindustries/Convergence_Architecture" target="_blank" rel="noopener noreferrer" class="hidden items-center gap-2 rounded-lg border border-slate-800 bg-slate-900/70 px-3 py-2 text-xs font-semibold text-slate-300 transition hover:border-slate-700 hover:text-white sm:inline-flex">
+          <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i>
+          Repository
+        </a>
+        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center rounded-lg border border-slate-800 bg-slate-900/70 p-2 text-slate-300 transition hover:border-slate-700 hover:text-white lg:hidden" aria-controls="mobile-drawer" aria-expanded="false" aria-label="Open section navigation">
+          <i data-lucide="menu" class="h-5 w-5" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-drawer" class="mobile-drawer fixed inset-0 z-[70] lg:hidden" data-open="false" aria-hidden="true">
+    <div class="absolute inset-0 bg-slate-950/78 backdrop-blur-sm" data-drawer-backdrop="true"></div>
+    <div class="mobile-drawer-panel glass-panel relative h-full w-[min(88vw,23rem)] overflow-y-auto border-r border-slate-800 p-5">
+      <div class="mb-6 flex items-center justify-between">
+        <div>
+          <p class="eyebrow text-violet-300">Research portal</p>
+          <p class="mt-1 text-sm text-slate-400">Navigate the public corpus</p>
+        </div>
+        <button id="mobile-menu-close" type="button" class="rounded-lg border border-slate-800 p-2 text-slate-400 hover:text-white" aria-label="Close section navigation">
+          <i data-lucide="x" class="h-5 w-5" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <nav class="space-y-1" aria-label="Mobile research sections">
+        <button type="button" class="nav-btn mobile-nav-btn w-full rounded-lg px-3 py-3 text-left text-sm font-semibold" data-target="overview" data-state="active">
+          <span class="flex items-center gap-3"><i data-lucide="layout-dashboard" class="h-4 w-4 text-violet-400"></i>Program Overview</span>
+        </button>
+        <button type="button" class="nav-btn mobile-nav-btn w-full rounded-lg px-3 py-3 text-left text-sm font-semibold" data-target="synthesis" data-state="inactive">
+          <span class="flex items-center gap-3"><i data-lucide="cpu" class="h-4 w-4 text-cyan-400"></i>The Architecture</span>
+        </button>
+        <button type="button" class="nav-btn mobile-nav-btn w-full rounded-lg px-3 py-3 text-left text-sm font-semibold" data-target="aerial" data-state="inactive">
+          <span class="flex items-center gap-3"><i data-lucide="plane" class="h-4 w-4 text-sky-400"></i>Aerial & Ambient</span>
+        </button>
+        <button type="button" class="nav-btn mobile-nav-btn w-full rounded-lg px-3 py-3 text-left text-sm font-semibold" data-target="representation" data-state="inactive">
+          <span class="flex items-center gap-3"><i data-lucide="user-x" class="h-4 w-4 text-amber-400"></i>Representation Gap</span>
+        </button>
+        <button type="button" class="nav-btn mobile-nav-btn w-full rounded-lg px-3 py-3 text-left text-sm font-semibold" data-target="governance" data-state="inactive">
+          <span class="flex items-center gap-3"><i data-lucide="shield-check" class="h-4 w-4 text-emerald-400"></i>Protocol Governance</span>
+        </button>
+        <button type="button" class="nav-btn mobile-nav-btn w-full rounded-lg px-3 py-3 text-left text-sm font-semibold" data-target="evidence" data-state="inactive">
+          <span class="flex items-center gap-3"><i data-lucide="layers-3" class="h-4 w-4 text-indigo-400"></i>Evidence & Status</span>
+        </button>
+        <button type="button" class="nav-btn mobile-nav-btn w-full rounded-lg px-3 py-3 text-left text-sm font-semibold" data-target="sources" data-state="inactive">
+          <span class="flex items-center gap-3"><i data-lucide="library" class="h-4 w-4 text-teal-400"></i>Primary Sources</span>
+        </button>
+        <button type="button" class="nav-btn mobile-nav-btn w-full rounded-lg px-3 py-3 text-left text-sm font-semibold" data-target="boundaries" data-state="inactive">
+          <span class="flex items-center gap-3"><i data-lucide="lock-keyhole" class="h-4 w-4 text-rose-400"></i>Publication Boundary</span>
+        </button>
+      </nav>
+
+      <div class="mt-8 rounded-xl border border-slate-800 bg-slate-950/60 p-4">
+        <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">Keyboard</p>
+        <p class="mt-2 text-xs leading-5 text-slate-400"><span class="kbd">/</span> opens this navigator. <span class="kbd">Esc</span> closes it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto grid w-full max-w-[92rem] flex-1 gap-7 px-4 py-7 sm:px-6 lg:grid-cols-[19rem_minmax(0,1fr)] lg:px-8 lg:py-9">
+    <aside class="hidden lg:block">
+      <div class="glass-panel sticky top-24 rounded-2xl p-4">
+        <div class="mb-4 px-3">
+          <p class="eyebrow text-slate-500">Research map</p>
+          <p class="mt-2 text-sm font-semibold text-white" id="active-section-name">Program Overview</p>
+        </div>
+
+        <nav id="nav-tabs" class="space-y-1" role="tablist" aria-label="Research sections" aria-orientation="vertical">
+          <button id="tab-button-overview" type="button" role="tab" aria-controls="tab-overview" aria-selected="true" class="nav-btn desktop-nav-btn w-full rounded-lg px-3 py-2.5 text-left text-sm font-semibold" data-target="overview" data-state="active">
+            <span class="flex items-center gap-3"><i data-lucide="layout-dashboard" class="h-4 w-4 text-violet-400"></i>Program Overview</span>
+          </button>
+          <button id="tab-button-synthesis" type="button" role="tab" aria-controls="tab-synthesis" aria-selected="false" tabindex="-1" class="nav-btn desktop-nav-btn w-full rounded-lg px-3 py-2.5 text-left text-sm font-semibold" data-target="synthesis" data-state="inactive">
+            <span class="flex items-center gap-3"><i data-lucide="cpu" class="h-4 w-4 text-cyan-400"></i>The Architecture</span>
+          </button>
+          <button id="tab-button-aerial" type="button" role="tab" aria-controls="tab-aerial" aria-selected="false" tabindex="-1" class="nav-btn desktop-nav-btn w-full rounded-lg px-3 py-2.5 text-left text-sm font-semibold" data-target="aerial" data-state="inactive">
+            <span class="flex items-center gap-3"><i data-lucide="plane" class="h-4 w-4 text-sky-400"></i>Aerial & Ambient</span>
+          </button>
+          <button id="tab-button-representation" type="button" role="tab" aria-controls="tab-representation" aria-selected="false" tabindex="-1" class="nav-btn desktop-nav-btn w-full rounded-lg px-3 py-2.5 text-left text-sm font-semibold" data-target="representation" data-state="inactive">
+            <span class="flex items-center gap-3"><i data-lucide="user-x" class="h-4 w-4 text-amber-400"></i>Representation Gap</span>
+          </button>
+          <button id="tab-button-governance" type="button" role="tab" aria-controls="tab-governance" aria-selected="false" tabindex="-1" class="nav-btn desktop-nav-btn w-full rounded-lg px-3 py-2.5 text-left text-sm font-semibold" data-target="governance" data-state="inactive">
+            <span class="flex items-center gap-3"><i data-lucide="shield-check" class="h-4 w-4 text-emerald-400"></i>Protocol Governance</span>
+          </button>
+          <button id="tab-button-evidence" type="button" role="tab" aria-controls="tab-evidence" aria-selected="false" tabindex="-1" class="nav-btn desktop-nav-btn w-full rounded-lg px-3 py-2.5 text-left text-sm font-semibold" data-target="evidence" data-state="inactive">
+            <span class="flex items-center gap-3"><i data-lucide="layers-3" class="h-4 w-4 text-indigo-400"></i>Evidence & Status</span>
+          </button>
+          <button id="tab-button-sources" type="button" role="tab" aria-controls="tab-sources" aria-selected="false" tabindex="-1" class="nav-btn desktop-nav-btn w-full rounded-lg px-3 py-2.5 text-left text-sm font-semibold" data-target="sources" data-state="inactive">
+            <span class="flex items-center gap-3"><i data-lucide="library" class="h-4 w-4 text-teal-400"></i>Primary Sources</span>
+          </button>
+          <button id="tab-button-boundaries" type="button" role="tab" aria-controls="tab-boundaries" aria-selected="false" tabindex="-1" class="nav-btn desktop-nav-btn w-full rounded-lg px-3 py-2.5 text-left text-sm font-semibold" data-target="boundaries" data-state="inactive">
+            <span class="flex items-center gap-3"><i data-lucide="lock-keyhole" class="h-4 w-4 text-rose-400"></i>Publication Boundary</span>
+          </button>
+        </nav>
+
+        <div class="mt-6 border-t border-slate-800 pt-5">
+          <div class="rounded-xl border border-slate-800 bg-slate-950/62 p-4">
+            <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">Decision state</p>
+            <div class="mt-3 space-y-2 font-mono text-[10px] leading-4">
+              <p class="text-emerald-300">COMPONENT BASIS: STRONG</p>
+              <p class="text-cyan-300">CONVERGENCE: RESEARCH OBJECT</p>
+              <p class="text-amber-300">INTEGRATED CASE: OPEN</p>
+              <p class="text-rose-300">ATTRIBUTION: REQUIRES RECORDS</p>
+            </div>
+          </div>
+
+          <div class="mt-4 grid grid-cols-2 gap-2 text-center">
+            <div class="rounded-lg border border-slate-800 bg-slate-950/55 px-2 py-3">
+              <p class="text-lg font-extrabold text-white">30</p>
+              <p class="text-[9px] uppercase tracking-wider text-slate-500">Atomic sources</p>
+            </div>
+            <div class="rounded-lg border border-slate-800 bg-slate-950/55 px-2 py-3">
+              <p class="text-lg font-extrabold text-white">20</p>
+              <p class="text-[9px] uppercase tracking-wider text-slate-500">Pathways</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main-content" class="min-w-0" tabindex="-1">
+      <div class="mb-4 lg:hidden">
+        <label for="mobile-select" class="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-500">Research section</label>
+        <select id="mobile-select" class="w-full rounded-xl border border-slate-800 bg-slate-900/90 px-4 py-3 text-sm font-semibold text-slate-200 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30">
+          <option value="overview">Program Overview</option>
+          <option value="synthesis">The Architecture</option>
+          <option value="aerial">Aerial & Ambient Extension</option>
+          <option value="representation">The Representation Gap</option>
+          <option value="governance">Protocol Governance</option>
+          <option value="evidence">Evidence Standard & Status</option>
+          <option value="sources">Primary Source Starter</option>
+          <option value="boundaries">Publication Boundary</option>
+        </select>
+      </div>
+
+      <section id="tab-overview" class="tab-content space-y-8" role="tabpanel" aria-labelledby="tab-button-overview">
+        <div class="hero-shell glass-panel rounded-3xl">
+          <img class="hero-visual" src="docs/visuals/01-convergence-hero.svg" alt="Network visualization of sensing, inference, identity, mobility, actuation, response measurement, AI, and governance converging around a human-facing system">
+          <div class="hero-copy px-5 pb-7 sm:px-8 sm:pb-9 lg:px-10">
+            <div class="flex flex-wrap gap-2">
+              <span class="rounded-full border border-violet-800/70 bg-violet-950/70 px-3 py-1 text-[10px] font-bold tracking-wider text-violet-200">ACTIVE RESEARCH</span>
+              <span class="rounded-full border border-cyan-900/70 bg-cyan-950/70 px-3 py-1 text-[10px] font-bold tracking-wider text-cyan-200">EVIDENCE E0–E7</span>
+              <span class="rounded-full border border-emerald-900/70 bg-emerald-950/70 px-3 py-1 text-[10px] font-bold tracking-wider text-emerald-200">PUBLIC REVIEW SURFACE</span>
+            </div>
+            <h1 class="gradient-text mt-5 max-w-5xl text-4xl font-extrabold leading-[1.03] tracking-tight sm:text-5xl lg:text-7xl">The system is not one machine.<br>It is the graph between machines.</h1>
+            <p class="mt-5 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">A public research program mapping how contactless sensing, identity linkage, physiological inference, mobile geometry, artificial intelligence, directed actuation, response measurement, and governance can form a distributed human-facing architecture.</p>
+            <div class="mt-7 flex flex-wrap gap-3">
+              <a href="#synthesis" data-tab-link="synthesis" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-purple-950/40 transition hover:from-violet-500 hover:to-purple-500">
+                Enter the architecture <i data-lucide="arrow-right" class="h-4 w-4"></i>
+              </a>
+              <a href="#evidence" data-tab-link="evidence" class="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-950/65 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-cyan-700 hover:text-white">
+                Inspect the proof state <i data-lucide="scan-search" class="h-4 w-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="glass-card rounded-2xl p-5">
+            <div class="flex items-start justify-between"><i data-lucide="database" class="h-5 w-5 text-violet-400"></i><span class="font-mono text-[10px] text-slate-600">PUBLIC LEDGER</span></div>
+            <p class="mt-5 text-3xl font-extrabold text-white">30</p>
+            <p class="mt-1 text-sm font-semibold text-slate-300">Atomic source records</p>
+            <p class="mt-2 text-xs leading-5 text-slate-500">Patents, papers, standards, product records, and institutional sources.</p>
+          </article>
+          <article class="glass-card rounded-2xl p-5">
+            <div class="flex items-start justify-between"><i data-lucide="binary" class="h-5 w-5 text-cyan-400"></i><span class="font-mono text-[10px] text-slate-600">CLAIM LAYER</span></div>
+            <p class="mt-5 text-3xl font-extrabold text-white">30</p>
+            <p class="mt-1 text-sm font-semibold text-slate-300">Atomic public claims</p>
+            <p class="mt-2 text-xs leading-5 text-slate-500">Each claim carries a bounded support layer and an explicit non-claim.</p>
+          </article>
+          <article class="glass-card rounded-2xl p-5">
+            <div class="flex items-start justify-between"><i data-lucide="route" class="h-5 w-5 text-emerald-400"></i><span class="font-mono text-[10px] text-slate-600">GRAPH LAYER</span></div>
+            <p class="mt-5 text-3xl font-extrabold text-white">20</p>
+            <p class="mt-1 text-sm font-semibold text-slate-300">Qualified pathways</p>
+            <p class="mt-2 text-xs leading-5 text-slate-500">Technical reachability and evidence state remain separate dimensions.</p>
+          </article>
+          <article class="glass-card rounded-2xl p-5">
+            <div class="flex items-start justify-between"><i data-lucide="flag" class="h-5 w-5 text-amber-400"></i><span class="font-mono text-[10px] text-slate-600">HIGHEST LAYER</span></div>
+            <p class="mt-5 text-3xl font-extrabold text-white">E4</p>
+            <p class="mt-1 text-sm font-semibold text-slate-300">Publicly established</p>
+            <p class="mt-2 text-xs leading-5 text-slate-500">E5 integration, E6 persistence, and E7 intent remain open proof layers.</p>
+          </article>
+        </div>
+
+        <div class="grid gap-5 xl:grid-cols-[1.35fr_0.65fr]">
+          <div class="visual-frame">
+            <img src="docs/visuals/02-adaptive-loop.svg" alt="Adaptive convergence loop from sensing through identity linkage, inference, positioning, action, response measurement, and model updating">
+          </div>
+          <article class="glass-panel signal-line rounded-2xl p-6">
+            <p class="eyebrow text-cyan-300">Current decision state</p>
+            <div class="mt-5 space-y-4">
+              <div class="border-l-2 border-emerald-500 pl-4">
+                <p class="text-sm font-bold text-white">Component basis</p>
+                <p class="mt-1 text-sm leading-6 text-slate-400">Strong, multi-domain, and aerially extended.</p>
+              </div>
+              <div class="border-l-2 border-cyan-500 pl-4">
+                <p class="text-sm font-bold text-white">Technical convergence</p>
+                <p class="mt-1 text-sm leading-6 text-slate-400">The research object—not a claim that every edge is already deployed together.</p>
+              </div>
+              <div class="border-l-2 border-amber-500 pl-4">
+                <p class="text-sm font-bold text-white">Integrated closure</p>
+                <p class="mt-1 text-sm leading-6 text-slate-400">Open until a bounded system connects the stages with synchronized records.</p>
+              </div>
+              <div class="border-l-2 border-rose-500 pl-4">
+                <p class="text-sm font-bold text-white">Event attribution</p>
+                <p class="mt-1 text-sm leading-6 text-slate-400">Requires event-specific provenance, access, command, and operator evidence.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div>
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="eyebrow text-violet-300">Start with the strongest object</p>
+              <h2 class="mt-2 text-2xl font-extrabold text-white sm:text-3xl">Four doors into the research</h2>
+            </div>
+            <p class="max-w-xl text-sm leading-6 text-slate-500">Each entry point answers a different question: what the architecture is, what mobility adds, why conventional consent fails, and what governance can still be implemented.</p>
+          </div>
+
+          <div class="mt-5 grid gap-4 md:grid-cols-2">
+            <article class="paper-card glass-card rounded-2xl p-6">
+              <i data-lucide="network" class="h-6 w-6 text-violet-400"></i>
+              <h3 class="mt-5 text-xl font-bold text-white">The Convergence Architecture</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">The full public synthesis: body-as-signal-medium, contactless physiology, silent speech, neural-data security, aerial mobility, distributed systems, actuation, adaptive AI, and proof requirements.</p>
+              <div class="mt-5 flex flex-wrap gap-4 text-sm font-semibold">
+                <a href="#synthesis" data-tab-link="synthesis" class="text-violet-300 hover:text-violet-200">Explore synthesis</a>
+                <a href="research/CONVERGENCE_ARCHITECTURE.md" class="text-slate-400 hover:text-white">Open paper</a>
+              </div>
+            </article>
+            <article class="paper-card glass-card rounded-2xl p-6">
+              <i data-lucide="plane" class="h-6 w-6 text-sky-400"></i>
+              <h3 class="mt-5 text-xl font-bold text-white">Aerial & Ambient Extension</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">UAV optical physiology, signs-of-life products, Wi-Fi activity interpretation, thermal vision-language transfer, and mobile infrastructural collection.</p>
+              <div class="mt-5 flex flex-wrap gap-4 text-sm font-semibold">
+                <a href="#aerial" data-tab-link="aerial" class="text-sky-300 hover:text-sky-200">Explore extension</a>
+                <a href="research/AERIAL_AMBIENT_SENSING_EXTENSION.md" class="text-slate-400 hover:text-white">Open paper</a>
+              </div>
+            </article>
+            <article class="paper-card glass-card rounded-2xl p-6">
+              <i data-lucide="user-x" class="h-6 w-6 text-amber-400"></i>
+              <h3 class="mt-5 text-xl font-bold text-white">Measurement Without Representation</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">The Representation Gap, the Representation Paradox, identity-indeterminate measurement, and the structural failure of person-level protocol controls.</p>
+              <div class="mt-5 flex flex-wrap gap-4 text-sm font-semibold">
+                <a href="#representation" data-tab-link="representation" class="text-amber-300 hover:text-amber-200">Explore the gap</a>
+                <a href="research/REPRESENTATION_GAP.md" class="text-slate-400 hover:text-white">Open paper</a>
+              </div>
+            </article>
+            <article class="paper-card glass-card rounded-2xl p-6">
+              <i data-lucide="shield-check" class="h-6 w-6 text-emerald-400"></i>
+              <h3 class="mt-5 text-xl font-bold text-white">Protocol Governance</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">Device indication, space-scoped policy, session attestation, provenance, retention, reassessment, certification, and the honest compliance boundary.</p>
+              <div class="mt-5 flex flex-wrap gap-4 text-sm font-semibold">
+                <a href="#governance" data-tab-link="governance" class="text-emerald-300 hover:text-emerald-200">Explore governance</a>
+                <a href="governance/PROTOCOL_GOVERNANCE.md" class="text-slate-400 hover:text-white">Open paper</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-synthesis" class="tab-content space-y-8" role="tabpanel" aria-labelledby="tab-button-synthesis" hidden aria-hidden="true" inert>
+        <div class="glass-panel rounded-3xl p-6 sm:p-9">
+          <p class="eyebrow text-cyan-300">Primary system synthesis</p>
+          <h2 class="gradient-text mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">The Convergence Architecture</h2>
+          <p class="mt-5 max-w-4xl text-base leading-7 text-slate-300">The relevant system is not one patent, implant, frequency, drone, or model. It is a distributed architecture assembled from capabilities developed across sensing, communications, neural engineering, autonomous systems, artificial intelligence, identity infrastructure, and adaptive control.</p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="research/CONVERGENCE_ARCHITECTURE.md" class="inline-flex items-center gap-2 rounded-xl bg-cyan-600 px-5 py-3 text-sm font-bold text-white hover:bg-cyan-500">Read full synthesis <i data-lucide="file-text" class="h-4 w-4"></i></a>
+            <a href="#evidence" data-tab-link="evidence" class="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-950/60 px-5 py-3 text-sm font-bold text-slate-200 hover:border-slate-600">Inspect evidence ladder</a>
+          </div>
+        </div>
+
+        <div class="visual-frame"><img src="docs/visuals/02-adaptive-loop.svg" alt="Seven-stage adaptive convergence loop"></div>
+
+        <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <article class="glass-card rounded-2xl p-5"><i data-lucide="activity" class="h-5 w-5 text-violet-400"></i><h3 class="mt-4 font-bold text-white">Body as signal environment</h3><p class="mt-2 text-sm leading-6 text-slate-400">Electrical activity, micromotion, blood-flow optics, heat, vibration, chemical emission, and RF scattering create multiple observable surfaces.</p></article>
+          <article class="glass-card rounded-2xl p-5"><i data-lucide="radar" class="h-5 w-5 text-cyan-400"></i><h3 class="mt-4 font-bold text-white">Contactless physiology</h3><p class="mt-2 text-sm leading-6 text-slate-400">Optical, radar, millimetre-wave, Wi-Fi, thermal, and acoustic systems recover partial physiological and behavioral observables without bodily contact.</p></article>
+          <article class="glass-card rounded-2xl p-5"><i data-lucide="audio-lines" class="h-5 w-5 text-indigo-400"></i><h3 class="mt-4 font-bold text-white">Silent speech interfaces</h3><p class="mt-2 text-sm leading-6 text-slate-400">Textile EMG in headphones and neckbands maps pre-audible neuromuscular patterns to limited command vocabularies and personalized decoders.</p></article>
+          <article class="glass-card rounded-2xl p-5"><i data-lucide="navigation" class="h-5 w-5 text-sky-400"></i><h3 class="mt-4 font-bold text-white">Mobile geometry</h3><p class="mt-2 text-sm leading-6 text-slate-400">Drones and vehicles change line of sight, distance, angle, aperture, relay position, and the spatial diversity available to a sensing or transmission graph.</p></article>
+          <article class="glass-card rounded-2xl p-5"><i data-lucide="zap" class="h-5 w-5 text-amber-400"></i><h3 class="mt-4 font-bold text-white">Directed actuation</h3><p class="mt-2 text-sm leading-6 text-slate-400">Programmable RF and directed-energy systems establish waveform control, target tracking, engagement timing, effect measurement, and re-engagement logic.</p></article>
+          <article class="glass-card rounded-2xl p-5"><i data-lucide="brain-circuit" class="h-5 w-5 text-emerald-400"></i><h3 class="mt-4 font-bold text-white">Adaptive artificial intelligence</h3><p class="mt-2 text-sm leading-6 text-slate-400">AI fuses incomplete observables, links identity and history, estimates hidden state, selects actions, measures response, and updates person or environment models.</p></article>
+        </div>
+
+        <div class="rounded-2xl border border-violet-800/40 bg-violet-950/20 p-6 sm:p-8">
+          <p class="eyebrow text-violet-300">The central analytical correction</p>
+          <blockquote class="mt-4 text-xl font-semibold leading-8 text-white sm:text-2xl">Do not ask whether one device performs the whole chain. Ask whether the chain can be assembled, which edges are documented, and what records would prove one bounded deployment.</blockquote>
+          <div class="mt-6 grid gap-3 font-mono text-xs sm:grid-cols-2">
+            <p class="rounded-lg border border-slate-800 bg-slate-950/70 p-3 text-emerald-300">CAPABILITY ≠ DEPLOYMENT</p>
+            <p class="rounded-lg border border-slate-800 bg-slate-950/70 p-3 text-cyan-300">DEPLOYMENT ≠ INTEGRATION</p>
+            <p class="rounded-lg border border-slate-800 bg-slate-950/70 p-3 text-amber-300">INTEGRATION ≠ PERSISTENCE</p>
+            <p class="rounded-lg border border-slate-800 bg-slate-950/70 p-3 text-rose-300">TECHNICAL COHERENCE ≠ ATTRIBUTION</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-aerial" class="tab-content space-y-8" role="tabpanel" aria-labelledby="tab-button-aerial" hidden aria-hidden="true" inert>
+        <div class="glass-panel rounded-3xl p-6 sm:p-9">
+          <p class="eyebrow text-sky-300">Technical extension</p>
+          <h2 class="gradient-text mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Aerial & Ambient Sensing</h2>
+          <p class="mt-5 max-w-4xl text-base leading-7 text-slate-300">Mobility does not create every sensing capability. It changes geometry, access, line of sight, relay position, search pattern, and the division of labor between airborne, fixed, vehicle-mounted, and remote systems.</p>
+          <a href="research/AERIAL_AMBIENT_SENSING_EXTENSION.md" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-sky-600 px-5 py-3 text-sm font-bold text-white hover:bg-sky-500">Read full extension <i data-lucide="file-text" class="h-4 w-4"></i></a>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <article class="glass-card rounded-2xl p-6"><p class="eyebrow text-sky-300">Controlled capability</p><h3 class="mt-3 text-lg font-bold text-white">UAV optical physiology</h3><p class="mt-3 text-sm leading-6 text-slate-400">Video-derived skin reflectance and minute head motion have supported aerial heart- and respiratory-rate estimation in bounded trials.</p><p class="mt-4 text-xs text-slate-500">Does not support through-wall optical sensing.</p></article>
+          <article class="glass-card rounded-2xl p-6"><p class="eyebrow text-violet-300">Named product</p><h3 class="mt-3 text-lg font-bold text-white">Areté AIMS</h3><p class="mt-3 text-sm leading-6 text-slate-400">Vendor-described aerial or ground imaging for person location, body position, heart and respiration measurement, and remote triage support.</p><p class="mt-4 text-xs text-slate-500">Product description is not independent validation of every condition.</p></article>
+          <article class="glass-card rounded-2xl p-6"><p class="eyebrow text-violet-300">Named product</p><h3 class="mt-3 text-lg font-bold text-white">Lynx6-A</h3><p class="mt-3 text-sm leading-6 text-slate-400">A UAV-assisted breathing and heartbeat detector positioned for survivor search under rubble and remote robotic operation.</p><p class="mt-4 text-xs text-slate-500">Does not establish covert identity tracking or cognitive actuation.</p></article>
+          <article class="glass-card rounded-2xl p-6"><p class="eyebrow text-cyan-300">AI interpretation</p><h3 class="mt-3 text-lg font-bold text-white">Wi-Chat</h3><p class="mt-3 text-sm leading-6 text-slate-400">Physical-model-guided large-language-model interpretation of Wi-Fi Channel State Information for zero-shot human activity recognition.</p><p class="mt-4 text-xs text-slate-500">Not unrestricted through-wall or vital-sign proof.</p></article>
+          <article class="glass-card rounded-2xl p-6"><p class="eyebrow text-amber-300">Model transfer</p><h3 class="mt-3 text-lg font-bold text-white">Thermal VLM adaptation</h3><p class="mt-3 text-sm leading-6 text-slate-400">Lightweight multimodal projection adapts RGB-pretrained vision-language systems to thermal drone imagery.</p><p class="mt-4 text-xs text-slate-500">Ecological evidence—not human-targeting deployment evidence.</p></article>
+          <article class="glass-card rounded-2xl p-6"><p class="eyebrow text-emerald-300">Infrastructure mobility</p><h3 class="mt-3 text-lg font-bold text-white">UAV swarm collection</h3><p class="mt-3 text-sm leading-6 text-slate-400">Hierarchical mobile nodes support smart-meter data collection, task allocation, relay, fault tolerance, and endurance analysis.</p><p class="mt-4 text-xs text-slate-500">Networking support layer—not validation of full bio-surveillance closure.</p></article>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-6 sm:p-8">
+          <p class="eyebrow text-amber-300">What the extension changes</p>
+          <div class="mt-5 grid gap-4 lg:grid-cols-5">
+            <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-4 text-center"><i data-lucide="scan-face" class="mx-auto h-5 w-5 text-sky-400"></i><p class="mt-3 text-xs font-bold text-white">Aerial sensing</p></div>
+            <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-4 text-center"><i data-lucide="move-3d" class="mx-auto h-5 w-5 text-violet-400"></i><p class="mt-3 text-xs font-bold text-white">Mobile geometry</p></div>
+            <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-4 text-center"><i data-lucide="brain-circuit" class="mx-auto h-5 w-5 text-cyan-400"></i><p class="mt-3 text-xs font-bold text-white">AI interpretation</p></div>
+            <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-4 text-center"><i data-lucide="radio-tower" class="mx-auto h-5 w-5 text-emerald-400"></i><p class="mt-3 text-xs font-bold text-white">Relay & collection</p></div>
+            <div class="rounded-xl border border-rose-900/60 bg-rose-950/15 p-4 text-center"><i data-lucide="circle-dashed" class="mx-auto h-5 w-5 text-rose-400"></i><p class="mt-3 text-xs font-bold text-white">Full closure remains open</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-representation" class="tab-content space-y-8" role="tabpanel" aria-labelledby="tab-button-representation" hidden aria-hidden="true" inert>
+        <div class="glass-panel rounded-3xl p-6 sm:p-9">
+          <p class="eyebrow text-amber-300">Research brief</p>
+          <h2 class="gradient-text mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Measurement Without Representation</h2>
+          <p class="mt-5 max-w-4xl text-base leading-7 text-slate-300">Protocols govern entities they can name: devices, addresses, sessions, credentials, and records. Ambient sensing systems can measure people who are not entities in that operational namespace.</p>
+          <a href="research/REPRESENTATION_GAP.md" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-amber-600 px-5 py-3 text-sm font-bold text-slate-950 hover:bg-amber-500">Read full research brief <i data-lucide="file-text" class="h-4 w-4"></i></a>
+        </div>
+
+        <div class="grid gap-5 lg:grid-cols-[0.72fr_1.28fr]">
+          <article class="rounded-2xl border border-amber-800/40 bg-amber-950/15 p-6 sm:p-8">
+            <p class="eyebrow text-amber-300">Representation Gap</p>
+            <p class="mt-6 font-mono text-5xl font-semibold text-white">G = M \ R</p>
+            <p class="mt-5 text-sm leading-7 text-slate-300"><strong class="text-white">M</strong> is the measurable set. <strong class="text-white">R</strong> is the represented set. Members of <strong class="text-white">G</strong> affect measurements but have no protocol address, session membership, credential, consent object, or subject entry in the audit log.</p>
+          </article>
+          <div class="visual-frame"><img src="docs/visuals/04-governance-map.svg" alt="Governance map showing a measured person absent from the protocol namespace and policy relocated to devices, spaces, sessions, and records"></div>
+        </div>
+
+        <div>
+          <p class="eyebrow text-slate-500">What non-representation forecloses</p>
+          <div class="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <article class="glass-card rounded-2xl p-5"><i data-lucide="bell-off" class="h-5 w-5 text-amber-400"></i><h3 class="mt-4 font-bold text-white">Direct notification</h3><p class="mt-2 text-sm leading-6 text-slate-400">A targeted message requires an address. Broadcast indication remains possible but cannot be acknowledged or verified as received.</p></article>
+            <article class="glass-card rounded-2xl p-5"><i data-lucide="badge-x" class="h-5 w-5 text-amber-400"></i><h3 class="mt-4 font-bold text-white">Bound consent</h3><p class="mt-2 text-sm leading-6 text-slate-400">Consent requires a represented authorizing party and an operation to which the authorization can bind.</p></article>
+            <article class="glass-card rounded-2xl p-5"><i data-lucide="log-out" class="h-5 w-5 text-amber-400"></i><h3 class="mt-4 font-bold text-white">Session termination</h3><p class="mt-2 text-sm leading-6 text-slate-400">A person absent from the session cannot invoke a primitive reserved for session members.</p></article>
+            <article class="glass-card rounded-2xl p-5"><i data-lucide="clipboard-x" class="h-5 w-5 text-amber-400"></i><h3 class="mt-4 font-bold text-white">Person-level audit</h3><p class="mt-2 text-sm leading-6 text-slate-400">The system can log that sensing occurred and by whom, but not which unrepresented person the measurement reached.</p></article>
+            <article class="glass-card rounded-2xl p-5"><i data-lucide="users-round" class="h-5 w-5 text-amber-400"></i><h3 class="mt-4 font-bold text-white">Affected-party enumeration</h3><p class="mt-2 text-sm leading-6 text-slate-400">Propagation geometry can define an affected volume without supplying a countable subject list to the system.</p></article>
+            <article class="glass-card rounded-2xl p-5"><i data-lucide="key-round" class="h-5 w-5 text-amber-400"></i><h3 class="mt-4 font-bold text-white">Authenticated preference</h3><p class="mt-2 text-sm leading-6 text-slate-400">A preference channel without represented standing cannot authenticate who is entitled to constrain the operation.</p></article>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-rose-800/40 bg-rose-950/15 p-6 sm:p-8">
+          <p class="eyebrow text-rose-300">The Representation Paradox</p>
+          <blockquote class="mt-4 text-xl font-semibold leading-8 text-white sm:text-2xl">Individual-level protection for measured non-participants requires individual-level representation. Individual-level representation constructs the persistent identity infrastructure that the protection exists to prevent.</blockquote>
+          <p class="mt-5 text-sm leading-7 text-slate-400">The escape is not better person registration. It is policy relocation: attach obligations to devices, spaces, sessions, and retained records.</p>
+        </div>
+      </section>
+
+      <section id="tab-governance" class="tab-content space-y-8" role="tabpanel" aria-labelledby="tab-button-governance" hidden aria-hidden="true" inert>
+        <div class="glass-panel rounded-3xl p-6 sm:p-9">
+          <p class="eyebrow text-emerald-300">Design requirements after the gap</p>
+          <h2 class="gradient-text mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Protocol Governance</h2>
+          <p class="mt-5 max-w-4xl text-base leading-7 text-slate-300">Governance remains possible when the policy bearer is moved away from an unrepresented person and attached to entities the system can actually verify: devices, physical volumes, sessions, and records.</p>
+          <a href="governance/PROTOCOL_GOVERNANCE.md" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-500">Read governance proposal <i data-lucide="file-text" class="h-4 w-4"></i></a>
+        </div>
+
+        <div class="visual-frame"><img src="docs/visuals/04-governance-map.svg" alt="Governance proposal around device, space, session, and record policy"></div>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <article class="glass-card rounded-2xl p-6"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-950 text-violet-300"><i data-lucide="radio" class="h-5 w-5"></i></div><h3 class="mt-5 text-lg font-bold text-white">1. Capability disclosure & active indication</h3><p class="mt-3 text-sm leading-6 text-slate-400">Structured declarations state what a device can sense; tamper-resistant indicators reveal when measurement is active. Indicator failure should disable sensing rather than silently remove notice.</p></article>
+          <article class="glass-card rounded-2xl p-6"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-950 text-cyan-300"><i data-lucide="box-select" class="h-5 w-5"></i></div><h3 class="mt-5 text-lg font-bold text-white">2. Space-scoped sensing policy</h3><p class="mt-3 text-sm leading-6 text-slate-400">Signed policies attach sensing rules to physical volumes: baseline permission, proxy limits, resolution ceilings, retention limits, permitted purposes, authority, and validity.</p></article>
+          <article class="glass-card rounded-2xl p-6"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-950 text-emerald-300"><i data-lucide="file-lock-2" class="h-5 w-5"></i></div><h3 class="mt-5 text-lg font-bold text-white">3. Session attestation & provenance</h3><p class="mt-3 text-sm leading-6 text-slate-400">Signed records bind initiator, purpose, measurement configuration, responder set, proxy relationship, applicable space policy, resolution class, and session interval.</p></article>
+          <article class="glass-card rounded-2xl p-6"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-950 text-amber-300"><i data-lucide="timer-reset" class="h-5 w-5"></i></div><h3 class="mt-5 text-lg font-bold text-white">4. Retention & reassessment</h3><p class="mt-3 text-sm leading-6 text-slate-400">Raw channel data receives short lifetimes, derived features inherit source constraints, deletion is verifiable, and retained corpora are reassessed as inference capability changes.</p></article>
+        </div>
+
+        <div class="rounded-2xl border border-slate-700 bg-slate-950/65 p-6 sm:p-8">
+          <div class="flex items-start gap-4">
+            <i data-lucide="triangle-alert" class="mt-1 h-6 w-6 shrink-0 text-amber-400"></i>
+            <div>
+              <p class="eyebrow text-amber-300">Honest compliance boundary</p>
+              <h3 class="mt-3 text-xl font-bold text-white">Protocol governance does not bind a passive external observer executing no protocol.</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-400">Space policy, indication, attestation, and retention constraints reach compliant infrastructure operated by identifiable parties. The adversarial tail requires physical or legal remedies and must not be presented as solved by protocol design.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-evidence" class="tab-content space-y-8" role="tabpanel" aria-labelledby="tab-button-evidence" hidden aria-hidden="true" inert>
+        <div class="glass-panel rounded-3xl p-6 sm:p-9">
+          <p class="eyebrow text-indigo-300">Evidence architecture</p>
+          <h2 class="gradient-text mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Evidence Standard & Status</h2>
+          <p class="mt-5 max-w-4xl text-base leading-7 text-slate-300">Evidence state answers what has been documented. Technical reachability answers how far a qualified pathway can extend. The two are tracked independently so compatibility cannot impersonate deployment proof.</p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="evidence/EVIDENCE_STANDARD.md" class="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-bold text-white hover:bg-indigo-500">Evidence standard</a>
+            <a href="evidence/CURRENT_STATUS.md" class="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-950/60 px-5 py-3 text-sm font-bold text-slate-200 hover:border-slate-600">Current status</a>
+          </div>
+        </div>
+
+        <div class="visual-frame"><img src="docs/visuals/03-evidence-ladder.svg" alt="Evidence ladder E0 through E7 showing public component evidence through E4 and open proof layers E5 through E7"></div>
+
+        <div class="space-y-3">
+          <div class="evidence-row rounded-xl border border-slate-800 bg-slate-950/60 p-4"><span class="font-mono text-lg font-bold text-slate-500">E0</span><div><p class="font-semibold text-white">Question, testimony, raw observation, or integration hypothesis</p><p class="mt-1 text-xs text-slate-500">Preserved with provenance; not treated as independent public corroboration.</p></div><span class="rounded-full border border-slate-700 px-2 py-1 text-[10px] font-bold text-slate-400">FOUNDATIONAL</span></div>
+          <div class="evidence-row rounded-xl border border-slate-800 bg-slate-950/60 p-4"><span class="font-mono text-lg font-bold text-violet-400">E1</span><div><p class="font-semibold text-white">Physical or formal mechanism</p><p class="mt-1 text-xs text-slate-500">A mechanism exists under defined physical, mathematical, or biological conditions.</p></div><span class="rounded-full border border-emerald-900 bg-emerald-950/35 px-2 py-1 text-[10px] font-bold text-emerald-300">ESTABLISHED</span></div>
+          <div class="evidence-row rounded-xl border border-slate-800 bg-slate-950/60 p-4"><span class="font-mono text-lg font-bold text-violet-400">E2</span><div><p class="font-semibold text-white">Laboratory or controlled capability</p><p class="mt-1 text-xs text-slate-500">A bounded implementation demonstrates the claimed function under reported conditions.</p></div><span class="rounded-full border border-emerald-900 bg-emerald-950/35 px-2 py-1 text-[10px] font-bold text-emerald-300">ESTABLISHED</span></div>
+          <div class="evidence-row rounded-xl border border-slate-800 bg-slate-950/60 p-4"><span class="font-mono text-lg font-bold text-cyan-400">E3</span><div><p class="font-semibold text-white">Patent, named product, or commercial capability</p><p class="mt-1 text-xs text-slate-500">A design or product is documented without automatically inheriting field-performance proof.</p></div><span class="rounded-full border border-emerald-900 bg-emerald-950/35 px-2 py-1 text-[10px] font-bold text-emerald-300">ESTABLISHED</span></div>
+          <div class="evidence-row rounded-xl border border-slate-800 bg-slate-950/60 p-4"><span class="font-mono text-lg font-bold text-cyan-400">E4</span><div><p class="font-semibold text-white">Institutional procurement, fielding, deployment, or adoption</p><p class="mt-1 text-xs text-slate-500">A named institution documents operational adoption or normative recognition.</p></div><span class="rounded-full border border-emerald-900 bg-emerald-950/35 px-2 py-1 text-[10px] font-bold text-emerald-300">HIGHEST PUBLIC LAYER</span></div>
+          <div class="evidence-row rounded-xl border border-amber-900/55 bg-amber-950/10 p-4"><span class="font-mono text-lg font-bold text-amber-400">E5</span><div><p class="font-semibold text-white">Cross-domain integration in one bounded system</p><p class="mt-1 text-xs text-slate-500">Named sensing, identity, inference, actuation, response, and update stages operate together.</p></div><span class="rounded-full border border-amber-800 bg-amber-950/35 px-2 py-1 text-[10px] font-bold text-amber-300">OPEN</span></div>
+          <div class="evidence-row rounded-xl border border-amber-900/55 bg-amber-950/10 p-4"><span class="font-mono text-lg font-bold text-amber-400">E6</span><div><p class="font-semibold text-white">Scale, persistence, identity linkage, or retention</p><p class="mt-1 text-xs text-slate-500">Records establish continuity, durable references, stored history, or system-wide reach.</p></div><span class="rounded-full border border-amber-800 bg-amber-950/35 px-2 py-1 text-[10px] font-bold text-amber-300">OPEN</span></div>
+          <div class="evidence-row rounded-xl border border-rose-900/55 bg-rose-950/10 p-4"><span class="font-mono text-lg font-bold text-rose-400">E7</span><div><p class="font-semibold text-white">Strategic intent, command, coordination, or mission</p><p class="mt-1 text-xs text-slate-500">Direct operator records, tasking, access, payment, mission, or command evidence.</p></div><span class="rounded-full border border-rose-800 bg-rose-950/35 px-2 py-1 text-[10px] font-bold text-rose-300">OPEN</span></div>
+        </div>
+
+        <div class="rounded-2xl border border-indigo-800/40 bg-indigo-950/15 p-6 sm:p-8">
+          <p class="eyebrow text-indigo-300">Advancement rule</p>
+          <p class="mt-4 text-lg font-semibold leading-8 text-white">No architecture-level claim advances merely because its components are compatible.</p>
+          <p class="mt-3 text-sm leading-7 text-slate-400">Every advancement requires the records appropriate to the next state. Evidence does not transfer automatically across components, modalities, ranges, institutions, or operating conditions.</p>
+        </div>
+      </section>
+
+      <section id="tab-sources" class="tab-content space-y-8" role="tabpanel" aria-labelledby="tab-button-sources" hidden aria-hidden="true" inert>
+        <div class="glass-panel rounded-3xl p-6 sm:p-9">
+          <p class="eyebrow text-teal-300">Primary-source starter</p>
+          <h2 class="gradient-text mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Read the Records, Not the Mythology</h2>
+          <p class="mt-5 max-w-4xl text-base leading-7 text-slate-300">The public corpus begins with primary or canonical records and attaches an explicit boundary to each one: what the source supports and what it cannot prove by itself.</p>
+          <a href="references/PRIMARY_SOURCE_STARTER.md" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-teal-600 px-5 py-3 text-sm font-bold text-white hover:bg-teal-500">Open complete starter index <i data-lucide="library" class="h-4 w-4"></i></a>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <article class="source-card glass-card rounded-2xl p-6"><p class="eyebrow text-violet-300">Patent family</p><h3 class="mt-3 text-lg font-bold text-white">US6470214B1 / US6587729B2</h3><p class="mt-3 text-sm leading-6 text-slate-400">Air Force-assigned records describing signal preprocessing, modulation, and apparatus intended to produce intelligible subjective speech through the RF-hearing effect.</p><div class="mt-5 flex flex-wrap gap-3 text-xs font-semibold"><span class="rounded-full bg-violet-950 px-3 py-1 text-violet-300">Supports E3 patent capability</span><span class="rounded-full bg-slate-800 px-3 py-1 text-slate-400">Not deployment proof</span></div></article>
+          <article class="source-card glass-card rounded-2xl p-6"><p class="eyebrow text-cyan-300">Controlled wearable</p><h3 class="mt-3 text-lg font-bold text-white">Wireless Silent Speech Interface</h3><p class="mt-3 text-sm leading-6 text-slate-400">Textile EMG electrodes integrated into headphones classify limited intentionally produced silent-control vocabularies in a controlled research setting.</p><div class="mt-5 flex flex-wrap gap-3 text-xs font-semibold"><span class="rounded-full bg-cyan-950 px-3 py-1 text-cyan-300">Supports E2 capability</span><span class="rounded-full bg-slate-800 px-3 py-1 text-slate-400">Not unrestricted thought decoding</span></div></article>
+          <article class="source-card glass-card rounded-2xl p-6"><p class="eyebrow text-cyan-300">Controlled wearable</p><h3 class="mt-3 text-lg font-bold text-white">SilentWear</h3><p class="mt-3 text-sm leading-6 text-slate-400">A low-power textile neckband with on-device EMG silent-speech recognition, inter-session testing, and personalized recalibration.</p><div class="mt-5 flex flex-wrap gap-3 text-xs font-semibold"><span class="rounded-full bg-cyan-950 px-3 py-1 text-cyan-300">Supports E2 edge inference</span><span class="rounded-full bg-slate-800 px-3 py-1 text-slate-400">Limited vocabulary</span></div></article>
+          <article class="source-card glass-card rounded-2xl p-6"><p class="eyebrow text-sky-300">Ambient sensing</p><h3 class="mt-3 text-lg font-bold text-white">Person-in-WiFi / Wi-Fi physiology</h3><p class="mt-3 text-sm leading-6 text-slate-400">Research demonstrates body segmentation, pose estimation, activity inference, and respiration-related measurement from radio-channel observations.</p><div class="mt-5 flex flex-wrap gap-3 text-xs font-semibold"><span class="rounded-full bg-sky-950 px-3 py-1 text-sky-300">Supports E2 sensing</span><span class="rounded-full bg-slate-800 px-3 py-1 text-slate-400">Operating envelope matters</span></div></article>
+          <article class="source-card glass-card rounded-2xl p-6"><p class="eyebrow text-emerald-300">Standard</p><h3 class="mt-3 text-lg font-bold text-white">IEEE Std 802.11bf-2025</h3><p class="mt-3 text-sm leading-6 text-slate-400">Standardizes WLAN sensing coordination among participating devices, including capability, setup, measurement, and feedback exchange.</p><div class="mt-5 flex flex-wrap gap-3 text-xs font-semibold"><span class="rounded-full bg-emerald-950 px-3 py-1 text-emerald-300">Supports coordination layer</span><span class="rounded-full bg-slate-800 px-3 py-1 text-slate-400">Not non-participant consent</span></div></article>
+          <article class="source-card glass-card rounded-2xl p-6"><p class="eyebrow text-amber-300">Institutional fielding</p><h3 class="mt-3 text-lg font-bold text-white">IFPC-HPM public records</h3><p class="mt-3 text-sm leading-6 text-slate-400">Army fielding and public testing establish directional high-power microwave counter-UAS operation at the institutional deployment layer.</p><div class="mt-5 flex flex-wrap gap-3 text-xs font-semibold"><span class="rounded-full bg-amber-950 px-3 py-1 text-amber-300">Supports E4 fielding</span><span class="rounded-full bg-slate-800 px-3 py-1 text-slate-400">Not human event attribution</span></div></article>
+        </div>
+
+        <div class="rounded-2xl border border-teal-800/35 bg-teal-950/12 p-6 sm:p-8">
+          <p class="eyebrow text-teal-300">Source discipline</p>
+          <div class="mt-5 grid gap-4 md:grid-cols-3">
+            <div><p class="text-sm font-bold text-white">Primary first</p><p class="mt-2 text-sm leading-6 text-slate-400">Prefer patents, standards, papers, procurement, institutional releases, and original product documentation.</p></div>
+            <div><p class="text-sm font-bold text-white">Support boundary</p><p class="mt-2 text-sm leading-6 text-slate-400">Every source states the layer it supports and the stronger claim it cannot establish alone.</p></div>
+            <div><p class="text-sm font-bold text-white">Contradiction preserved</p><p class="mt-2 text-sm leading-6 text-slate-400">Errors, conflicts, alternatives, and supersession are marked rather than silently removed.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-boundaries" class="tab-content space-y-8" role="tabpanel" aria-labelledby="tab-button-boundaries" hidden aria-hidden="true" inert>
+        <div class="glass-panel rounded-3xl p-6 sm:p-9">
+          <p class="eyebrow text-rose-300">Publication policy</p>
+          <h2 class="gradient-text mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Public by Design. Bounded by Design.</h2>
+          <p class="mt-5 max-w-4xl text-base leading-7 text-slate-300">This repository is the public research and independent-review surface. It is not a mirror of the private canonical evidence system and it is not the dormant commercial workspace.</p>
+          <a href="PUBLICATION_BOUNDARY.md" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-rose-600 px-5 py-3 text-sm font-bold text-white hover:bg-rose-500">Read publication boundary <i data-lucide="lock-keyhole" class="h-4 w-4"></i></a>
+        </div>
+
+        <div class="grid gap-5 lg:grid-cols-2">
+          <article class="rounded-2xl border border-emerald-800/40 bg-emerald-950/12 p-6 sm:p-8">
+            <div class="flex items-center gap-3"><i data-lucide="globe-2" class="h-6 w-6 text-emerald-400"></i><h3 class="text-xl font-bold text-white">Published here</h3></div>
+            <ul class="mt-5 space-y-3 text-sm leading-6 text-slate-300">
+              <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-emerald-400"></i>Public technical syntheses and governance papers</li>
+              <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-emerald-400"></i>Evidence-state definitions and decision snapshots</li>
+              <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-emerald-400"></i>Public source maps and bounded claim language</li>
+              <li class="flex gap-3"><i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-emerald-400"></i>Public-safe diagrams, contribution rules, and citation metadata</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-rose-800/40 bg-rose-950/12 p-6 sm:p-8">
+            <div class="flex items-center gap-3"><i data-lucide="shield-off" class="h-6 w-6 text-rose-400"></i><h3 class="text-xl font-bold text-white">Deliberately excluded</h3></div>
+            <ul class="mt-5 space-y-3 text-sm leading-6 text-slate-300">
+              <li class="flex gap-3"><i data-lucide="x" class="mt-1 h-4 w-4 shrink-0 text-rose-400"></i>Private testimony, records, access paths, and Drive links</li>
+              <li class="flex gap-3"><i data-lucide="x" class="mt-1 h-4 w-4 shrink-0 text-rose-400"></i>Protected mathematics, scoring weights, thresholds, and calibration constants</li>
+              <li class="flex gap-3"><i data-lucide="x" class="mt-1 h-4 w-4 shrink-0 text-rose-400"></i>Device or channel signatures and proprietary graph-extraction logic</li>
+              <li class="flex gap-3"><i data-lucide="x" class="mt-1 h-4 w-4 shrink-0 text-rose-400"></i>Pricing, buyer targeting, outreach scripts, and commercial offer design</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="grid gap-5 xl:grid-cols-[1.2fr_0.8fr]">
+          <article class="glass-card rounded-2xl p-6 sm:p-8">
+            <p class="eyebrow text-violet-300">Authorship & identity</p>
+            <h3 class="mt-3 text-xl font-bold text-white">Research developed by Marc Tuinier at MT Tech Industries LLC.</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-400">Digital Dichotomy publications are attributed to Fin Nyx where explicitly marked. Technical, evidentiary, publication, and commercial identities remain connected but functionally separated. Repository location does not collapse those boundaries.</p>
+          </article>
+          <article class="glass-card rounded-2xl p-6 sm:p-8">
+            <p class="eyebrow text-slate-500">Rights notice</p>
+            <p class="mt-3 text-sm font-semibold leading-6 text-white">Copyright © 2026 MT Tech Industries LLC. All rights reserved.</p>
+            <p class="mt-3 text-xs leading-6 text-slate-500">Public access does not place the content in the public domain and does not grant an open-source or open-content license unless a specific file states otherwise.</p>
+          </article>
+        </div>
+
+        <div class="rounded-2xl border border-slate-700 bg-slate-950/65 p-6 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-8">
+          <div>
+            <p class="eyebrow text-cyan-300">Citation</p>
+            <p class="mt-3 text-sm leading-6 text-slate-300">Tuinier, Marc. <em>Convergence Architecture</em>. MT Tech Industries LLC, 2026.</p>
+          </div>
+          <button id="copy-citation" type="button" class="mt-5 inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900 px-5 py-3 text-sm font-bold text-slate-200 hover:border-cyan-700 hover:text-white sm:mt-0">
+            <i data-lucide="copy" class="h-4 w-4"></i>Copy citation
+          </button>
+        </div>
+      </section>
+
+      <noscript>
+        <div class="glass-panel rounded-2xl p-6">
+          <p class="font-bold text-white">JavaScript is disabled.</p>
+          <p class="mt-2 text-sm leading-6 text-slate-400">The interactive section navigator requires JavaScript. The complete research remains available directly:</p>
+          <ul class="mt-4 space-y-2 text-sm text-cyan-300">
+            <li><a href="research/CONVERGENCE_ARCHITECTURE.md">Convergence Architecture synthesis</a></li>
+            <li><a href="research/AERIAL_AMBIENT_SENSING_EXTENSION.md">Aerial and ambient extension</a></li>
+            <li><a href="research/REPRESENTATION_GAP.md">Representation Gap</a></li>
+            <li><a href="governance/PROTOCOL_GOVERNANCE.md">Protocol Governance</a></li>
+            <li><a href="evidence/CURRENT_STATUS.md">Current Evidence Status</a></li>
+          </ul>
+        </div>
+      </noscript>
+    </main>
+  </div>
+
+  <footer class="border-t border-slate-800/80 bg-slate-950/76">
+    <div class="mx-auto flex max-w-[92rem] flex-col gap-5 px-4 py-8 text-xs text-slate-500 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+      <div>
+        <p>Research developed by <span class="font-semibold text-slate-300">Marc Tuinier</span> at <span class="font-semibold text-slate-300">MT Tech Industries LLC</span>.</p>
+        <p class="mt-1">Public research surface · Evidence date August 4, 2026</p>
+      </div>
+      <div class="flex flex-wrap gap-x-5 gap-y-2">
+        <a href="CONTRIBUTING.md" class="hover:text-white">Contribute evidence</a>
+        <a href="CITATION.cff" class="hover:text-white">Citation metadata</a>
+        <a href="RIGHTS.md" class="hover:text-white">Rights</a>
+        <a href="https://github.com/mttechindustries/Convergence_Architecture" target="_blank" rel="noopener noreferrer" class="hover:text-white">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="copy-toast" class="copy-toast rounded-xl border border-emerald-800 bg-emerald-950/95 px-4 py-3 text-sm font-semibold text-emerald-200 shadow-xl" data-visible="false" role="status" aria-live="polite">Citation copied</div>
+</body>
+</html>
