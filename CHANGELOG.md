@@ -2,6 +2,27 @@
 
 All material changes to the public Convergence Architecture repository are recorded here.
 
+## 0.2.0 — 2026-08-04
+
+### Visual research landing page
+
+- Replaced the initial text-forward README with a complete visual public entry point.
+- Added an original Convergence Architecture hero graphic showing the distributed system graph.
+- Added an adaptive closed-loop architecture visual spanning sensing through model updating.
+- Added an `E0–E7` evidence ladder showing the established public component basis and open proof layers.
+- Added a Representation Gap governance map relocating policy to devices, spaces, sessions, and records.
+- Expanded the opening thesis, three-minute architecture walkthrough, public capability map, featured-research cards, research atlas, open-proof requirements, repository navigation, contribution guidance, and publication boundary.
+- Preserved the research-first posture; no pricing, sales copy, private testimony, protected mathematics, signatures, calibration data, or private-source material was imported.
+
+### Decision state
+
+```text
+PUBLIC COMPONENT BASIS: ESTABLISHED ACROSS MULTIPLE DOMAINS
+TECHNICAL CONVERGENCE: THE RESEARCH OBJECT
+INTEGRATED CASE CLOSURE: OPEN
+EVENT-SPECIFIC ATTRIBUTION: REQUIRES RECORDS
+```
+
 ## 0.1.0 — 2026-08-04
 
 ### Added
